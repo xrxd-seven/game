@@ -1,85 +1,106 @@
+02.18 13:17
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新人小店 - 潜行者2：切尔诺贝利之心</title>
+    <title>新人小店 - 加速器下载</title>
     <style>
         body {
             font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
             max-width: 800px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 0 20px;
             background-color: #f5f5f5;
         }
-
         .container {
             background: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
         h1 {
-            color: #2c3e50;
+            color: #e74c3c;
             text-align: center;
-            margin-bottom: 30px;
         }
-
-        .section {
-            margin: 20px 0;
+        .download-section {
+            margin: 25px 0;
             padding: 15px;
+            background: #f9f9f9;
             border-left: 4px solid #3498db;
-            background-color: #f8f9fa;
         }
-
-        .copyable {
-            cursor: pointer;
-            padding: 8px;
-            background: #f0f0f0;
-            border-radius: 4px;
-            transition: background 0.3s;
+        a {
+            color: #3498db;
+            text-decoration: none;
         }
-
-        .copyable:hover {
-            background: #e0e0e0;
+        a:hover {
+            text-decoration: underline;
         }
-
-        .hidden {
-            display: none;
+        .notice {
+            color: #e67e22;
+            padding: 10px;
+            background: #fdf2e9;
+            border-radius: 5px;
+            margin: 15px 0;
         }
-
-        button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            margin: 10px 0;
-        }
-
-        button:hover {
-            background: #2980b9;
-        }
-
         .contact {
             text-align: center;
             margin-top: 30px;
             color: #666;
         }
+        .copy-code {
+            cursor: pointer;
+            padding: 2px 5px;
+            background: #eee;
+            border-radius: 3px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>欢迎光临新人小店！</h1>
-        
-        <div class="section">
-            <h2>🎮 游戏名称</h2>
-            <p>潜行者2：切尔诺贝利之心</p >
+        <h1>欢迎光临新人小店 </h1>
+        <div class="notice">
+            ⚠️ 安装时请将所有权限框点同意，确保正常使用
         </div>
-
-        <div class="section">
-            <h2>🔑 SteamKey
-             激活码</h2>
-            <div class="copyable" onclick="copyToClipboard('F9ANX-CKMPA-ONM1J-O4UUJ-8
+        <div class="download-section">
+            <h2> 加速器下载（推荐5/20倍）</h2>
+            <p>链接：<a href="https://www.123865.com/s/IfJiVv-ocjQ3?" target="_blank">点击下载</a></p>
+            <p>提取码：<span class="copy-code" onclick="alert('已复制提取码：xrxd')">xrxd</span></p>
+        </div>
+        <div class="download-section">
+            <h2>️ 自动点击器下载</h2>
+            <p>链接：<a href="https://www.123865.com/s/IfJiVv-t6TE3?" target="_blank">点击下载</a></p>
+            <p>提取码：<span class="copy-code" onclick="alert('已复制提取码：xrxd')">xrxd</span></p>
+        </div>
+        <div class="notice">
+             好评即可赠送全套兑换码！使用中有任何问题请立即联系小店处理
+        </div>
+        <div class="contact">
+            <h3> 联系我们</h3>
+            <p>请通过小店留言功能联系我们</p>
+            <p>我们会用心处理每一个问题！</p>
+            <p style="color: #999; margin-top: 20px;">⭐ 感谢您的支持与信任 ⭐</p>
+        </div>
+    </div>
+    <script>
+        // 简单复制功能
+        document.querySelectorAll('.copy-code').forEach(item => {
+            item.addEventListener('click', function() {
+                const code = this.innerText;
+                navigator.clipboard.writeText(code).then(() => {
+                    alert('已复制：' + code);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
